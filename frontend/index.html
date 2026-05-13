@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<h1>🎮 Biblioteca Gamer</h1>
+<p class="subtitulo">
+    Organizá tu colección de videojuegos favoritos
+</p>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Videojuegos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <form id="formulario">
+
+        <input type="text" id="titulo" placeholder="Título" required>
+
+        <input type="text" id="genero" placeholder="Género" required>
+
+        <input type="text" id="plataforma" placeholder="Plataforma" required>
+
+        <input
+            type="number"
+            min="1950"
+            max="2035"
+            id="anio"
+            placeholder="Año"
+            required
+        >
+
+        <input
+            type="number"
+            step="0.1"
+            min="0"
+            max="10"
+            id="puntuacion"
+            placeholder="Puntuación"
+            required
+        >
+
+        <button type="submit">
+            Agregar videojuego
+        </button>
+
+    </form>
+        <div id="lista-videojuegos"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
